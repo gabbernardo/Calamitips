@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".BeforeEarthquake">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="100dp"
+            android:text="Before the Earthquake"
+            android:textColor="#ffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:padding="9dp"
+            android:background="@drawable/cardview_gradient"/>
+
+
+
+        <!-- What you will do before the earthquake -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview_gradient"
+                android:orientation="vertical">
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" a. One important way to prepare for a temblor is to try to make your home as safe as possible. For old homes, it’s a good idea to investigate whether it complies with local building codes and identify potential weaknesses"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" b. The stuff inside your home is just as important as the walls themselves. Take a tour of each room to look for things that could fall or break if the ground starts to wobble. Sometimes this can be solved with a little reorganization, moving large or heavy objects to lower shelves."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" c. While inspecting your home, make sure you know how to shut off your utilities. And while you’re at it, check out the connections of gas appliances; it’s best if these are flexible rather than rigid so they can bend with the rolling ground."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" d. Assemble an earthquake emergency kit that includes food, water, and other supplies for at least 72 hours. When preparing your kit, consider each member of your family and their needs—and don’t forget your pets."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".DuringLandslide">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="100dp"
+            android:text="During the Landslide"
+            android:textColor="#ffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:padding="9dp"
+            android:background="@drawable/cardview_gradient"/>
+
+
+
+        <!-- What you will do during the landslide -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview_gradient"
+                android:orientation="vertical">
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" a. If you suspect imminent danger, evacuate immediately. Inform affected neighbors if you can, and contact your public works, fire or police department."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" b. Listen for unusual sounds that might indicate moving debris, such as trees cracking or boulders knocking together."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" c. If you are near a stream or channel, be alert for any sudden increase or decrease in water flow and notice whether the water changes from clear to muddy. Such changes may mean there is debris flow activity upstream so be prepared to move quickly."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" d. Be especially alert when driving— watch for collapsed pavement, mud, fallen rocks and other indications of possible debris flow."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" d. If you are ordered or decide to evacuate, take your animals with you. Consider a precautionary evacuation of large or numerous animals as soon as you are aware of impending danger."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

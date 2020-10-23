@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".FloodActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_Flood_PrecautionaryMeasures"
+            android:layout_width="300dp"
+            android:layout_height="95dp"
+            android:textSize="22sp"
+            android:text="Flood Safety Rules"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/blue_warning"
+            android:drawableLeft="@drawable/ic_flood_warning"
+            android:textColor="#ffff"
+            android:padding="20dp"
+            android:layout_marginTop="25dp"/>
+
+        <Button
+            android:id="@+id/btn_before_the_flood"
+            android:layout_width="375dp"
+            android:layout_height="100dp"
+            android:textSize="22sp"
+            android:text="Before the Flood"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/blue_warning"
+            android:drawableLeft="@drawable/ic_car_flood"
+            android:textColor="#ffff"
+            android:padding="20dp"
+            android:layout_marginTop="25dp"/>
+
+        <Button
+            android:id="@+id/btn_during_the_flood"
+            android:layout_width="375dp"
+            android:layout_height="100dp"
+            android:textSize="22sp"
+            android:text="During the Flood"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/blue_warning"
+            android:drawableLeft="@drawable/ic_during_flood"
+            android:textColor="#ffff"
+            android:padding="20dp"
+            android:layout_marginTop="25dp"/>
+
+        <Button
+            android:id="@+id/btn_after_the_flood"
+            android:layout_width="375dp"
+            android:layout_height="100dp"
+            android:textSize="22sp"
+            android:text="After the Flood"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/blue_warning"
+            android:drawableLeft="@drawable/ic_footprints"
+            android:textColor="#ffff"
+            android:padding="20dp"
+            android:layout_marginTop="25dp"/>
+
+
+        <Button
+            android:id="@+id/btn_when_warned_of_flood"
+            android:layout_width="375dp"
+            android:layout_height="100dp"
+            android:textSize="22sp"
+            android:text="When warned of Flood"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/blue_warning"
+            android:drawableLeft="@drawable/ic_man_megaphone"
+            android:textColor="#ffff"
+            android:padding="20dp"
+            android:layout_marginTop="25dp"/>
+
+
+        <Button
+            android:id="@+id/btn_mitigate_the_flood"
+            android:layout_width="375dp"
+            android:layout_height="100dp"
+            android:textSize="22sp"
+            android:text="How to mitigate flood"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/blue_warning"
+            android:drawableLeft="@drawable/ic_stop"
+            android:textColor="#ffff"
+            android:padding="20dp"
+            android:layout_marginTop="25dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

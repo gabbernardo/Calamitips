@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-black"
+            android:text="My Dashboard"
+            android:textColor="#ffff"
+            android:textSize="36sp"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.41"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <Button
+            android:id="@+id/btn_typhoon"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_btn_red"
+            android:drawableTop="@drawable/ic_rain"
+            android:fontFamily="sans-serif-black"
+            android:text="Typhoon"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_flood"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_flood"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_btn_red"
+            android:drawableTop="@drawable/ic_flood_main"
+            android:fontFamily="sans-serif-black"
+            android:text="Flood"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_typhoon"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_tornado"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_btn_red"
+            android:drawableTop="@drawable/ic_tornado"
+            android:fontFamily="sans-serif-black"
+            android:text="Tornado"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_earthquake"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_typhoon"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_earthquake"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_btn_red"
+            android:drawableTop="@drawable/ic_earthquake"
+            android:fontFamily="sans-serif-black"
+            android:text="Earthquake"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_tornado"
+            app:layout_constraintTop_toBottomOf="@+id/btn_flood"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_tsunami"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_btn_red"
+            android:drawableTop="@drawable/ic_tsunami_btn"
+            android:fontFamily="sans-serif-black"
+            android:text="Tsunami"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_landslide"
+            app:layout_constraintTop_toBottomOf="@+id/btn_earthquake"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_landslide"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_btn_red"
+            android:drawableTop="@drawable/ic_landslide"
+            android:fontFamily="sans-serif-black"
+            android:text="landslide"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_tsunami"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_tornado"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_volcanic_eruption"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_btn_red"
+            android:drawableTop="@drawable/ic_volcano_btn"
+            android:fontFamily="sans-serif-black"
+            android:text="Volcanic Eruption"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_wildfire"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_landslide"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_wildfire"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_btn_red"
+            android:drawableTop="@drawable/ic_wildfire_btn"
+            android:fontFamily="sans-serif-black"
+            android:text="Wildfire"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_volcanic_eruption"
+            app:layout_constraintTop_toBottomOf="@+id/btn_tsunami"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_get_current_location"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/cardview_gradient"
+            android:drawableLeft="@drawable/ic_location_icon"
+            android:fontFamily="sans-serif-black"
+            android:padding="5dp"
+            android:text="Get Current Location"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_volcanic_eruption"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

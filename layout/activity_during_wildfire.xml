@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".DuringWildfire">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="100dp"
+            android:text="During the Wildfire"
+            android:textColor="#ffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_wildfire_icon"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:padding="9dp"
+            android:background="@drawable/cardview_gradient"/>
+
+
+
+        <!-- What you will do during the wildfire -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview_gradient"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Stay Safe During Wildfire"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="left" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" a. Turn on a TV or radio to get the latest emergency information. vacuate immediately if authorities tell you to do so!"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" b. Use an N95 mask to protect yourself from smoke inhalation. If you are not ordered to evacuate but smoky conditions exist, stay inside in a safe location or go to a community building where smoke levels are lower."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" c. Turn off air conditioning/air circulation systems"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" d. If hoses and adequate water are available set them up. Fill buckets with water."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" e. Move upholstered furniture away from windows and sliding glass doors."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" f. Open or take down flammable drapes and curtains. Remove combustible material from the area surrounding the house (lawn chairs, tables, etc.)."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

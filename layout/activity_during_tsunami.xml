@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".DuringTsunami">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="100dp"
+            android:text="During the Tsunami"
+            android:textColor="#ffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_tsunami_icon"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:padding="9dp"
+            android:background="@drawable/cardview_gradient"/>
+
+
+
+        <!-- What you will do during the tsunami -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview_gradient"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="If you Feel a Strong Coastal Earthquake"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="left"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" a. Drop, cover, and hold on to protect yourself from the earthquake."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" b. When the shaking stops, gather members of your household and review your evacuation plan. A tsunami may be coming within minutes."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" c. Follow instructions issued by local authorities. Recommended evacuation routes may be different from the one you planned, or you may be advised to climb higher."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" d. Take your emergency preparedness kit. Having supplies will make you more comfortable during the evacuation."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" e. If you evacuate, take your animals with you. If it is not safe for you, it is not safe for them."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" f. Get to higher ground as far inland as possible. Watching a tsunami from the beach or cliffs could put you in grave danger. If you can see the wave, you are too close to escape it."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" g. Keep a transistorized radio and flashlight with spare batteries, emergency cooking equipment, candies, matches and first aid kit handy in case of emergency."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" h.  Stay away until local officials tell you it is safe. A tsunami is a series of waves that may continue for hours. Do not assume that after one wave the danger is over. The next wave may be larger than the first one."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

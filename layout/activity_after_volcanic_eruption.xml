@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".AfterVolcanicEruption">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="100dp"
+            android:text="After  Eruption"
+            android:textColor="#ffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_volcano_icon"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:padding="9dp"
+            android:background="@drawable/cardview_gradient"/>
+
+
+
+        <!-- What you will do after the volcanic eruption -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview_gradient"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Staying Safe After a Volcanic Eruption"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="left"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" a. Send text messages or use social media to reach out to family and friends. Phone systems are often busy after a disaster. Only make emergency calls."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" b. Avoid driving in heavy ash. Driving will stir up volcanic ash that can clog engines and stall vehicles."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" c. If you have any breathing problems, avoid contact with ash. Stay indoors until authorities say it is safe to go outside."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" d. Do not get on your roof to remove ash unless you have guidance or training. If you have to remove ash, then be very careful as ash makes surfaces slippery. Be careful not to contribute additional weight to an overloaded roof."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" e. protect yourself from falling ash that can irritate skin and injure breathing passages, eyes, and open wounds. Use a well-fitting, certified face mask such as an N95. The Centers for Disease Control and Prevention (CDC) has a list of certified masks and the maker’s instructions on how to use the masks."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" f. Consult your doctor if you have existing respiratory difficulties."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" g. Keep a transistorized radio and flashlight with spare batteries, emergency cooking equipment, candies, matches and first aid kit handy in case of emergency."
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="10dp" />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
