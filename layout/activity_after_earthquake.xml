@@ -17,6 +17,7 @@
             android:layout_width="290dp"
             android:layout_height="100dp"
             android:text="After the Earthquake"
+            android:drawableLeft="@drawable/ic_earthquake_warning_sign"
             android:textColor="#ffff"
             android:textSize="30sp"
             android:textStyle="bold"
