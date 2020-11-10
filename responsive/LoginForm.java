@@ -15,19 +15,18 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class LoginForm extends AppCompatActivity {
 
-   private EditText Username;
-   private EditText Password;
+   private TextInputLayout Email, Password;
    private Button Login;
    private TextView Info;
-   private TextView Info2;
    private int counter = 3;
-   private ImageView loginLogo, loginUserLogo, loginUserPassword;
+   private ImageView loginLogo;
    private TextView userRegistration;
    private FirebaseAuth firebaseAuth;
    private ProgressDialog progressDialog;
@@ -39,14 +38,11 @@ public class LoginForm extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_form);
 
-        Username = (EditText) findViewById(R.id.etUserName);
-        Password = (EditText) findViewById(R.id.etPassword);
+        Email = (TextInputLayout) findViewById(R.id.loginUserEmail);
+        Password = (TextInputLayout) findViewById(R.id.loginUserPassword);
         Login = (Button) findViewById(R.id.btnLogin);
         Info = (TextView) findViewById(R.id.tvInfo);
-        Info2 = (TextView) findViewById(R.id.tvInfo2);
         loginLogo = (ImageView)findViewById(R.id.loginLogo);
-        loginUserLogo = (ImageView)findViewById(R.id.loginLogo);
-        loginUserPassword = (ImageView)findViewById(R.id.loginPassword);
         userRegistration = (TextView)findViewById(R.id.tvRegister);
         forgotPassword = (TextView)findViewById(R.id.tvForgotPassword);
 
@@ -63,7 +59,15 @@ public class LoginForm extends AppCompatActivity {
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                validate(Username.getText().toString(), Password.getText().toString());
+                // If user leave the edit text blank, it will put error and tells that the field can not be empty
+                if(checkValidation()){
+
+                    validate(Email.getEditText().getText().toString(), Password.getEditText().getText().toString());
+
+                }
+
+
+
             }
         });
 
@@ -90,6 +94,8 @@ public class LoginForm extends AppCompatActivity {
         progressDialog.setMessage("Please wait a few seconds");
         progressDialog.show();
 
+
+
         firebaseAuth.signInWithEmailAndPassword(userName,userPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -101,7 +107,7 @@ public class LoginForm extends AppCompatActivity {
                     Toast.makeText(LoginForm.this, "Login Failed", Toast.LENGTH_SHORT).show();
                     counter --;
                     Info.setText("No of attempts remaining: " + counter);
-                    Info2.setText("Your username or password is incorrect");
+                    Password.setError("Your password is incorrect");
                     progressDialog.dismiss();
                     if(counter == 0){
                         Login.setEnabled(false);
@@ -126,6 +132,28 @@ public class LoginForm extends AppCompatActivity {
                 Toast.makeText(this, "Verify your email", Toast.LENGTH_SHORT).show();
                 firebaseAuth.signOut();
             }
+
+         }
+
+         /** Checking if the user put all the details needed in order to log in**/
+         private Boolean checkValidation(){
+             Boolean result = false;
+
+             String email = Email.getEditText().getText().toString();
+             String password = Password.getEditText().getText().toString();
+
+                if(email.isEmpty() || password.isEmpty()){
+                    Email.setError("Field can't be empty");
+                    Password.setError("Field can't be empty");
+                }else{
+                    Email.setError(null);
+                    Email.setErrorEnabled(true);
+                    Password.setError(null);
+                    Password.setErrorEnabled(true);
+                    result = true;
+                }
+
+                return result;
 
          }
 

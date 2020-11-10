@@ -5,11 +5,13 @@ public class UserProfile {
     public String Age;
     public String Email;
     public String Password;
+    public String Gender;
 
-    public UserProfile(String name, String age, String email, String password) {
+    public UserProfile(String name, String age, String email, String password, String gender) {
         Name = name;
         Age = age;
         Email = email;
         Password = password;
+        Gender = gender;
     }
 }

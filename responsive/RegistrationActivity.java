@@ -10,11 +10,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -23,13 +26,14 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class RegistrationActivity extends AppCompatActivity {
 
-    private EditText userName, userPassword, userEmail, userAge;
+    private TextInputLayout userName, userPassword, userEmail, userAge;
     private Button regButton;
     private TextView userLogin;
-    private TextView tvRegName, tvRegPassword, tvRegEmail, tvRegAge;
     private FirebaseAuth firebaseAuth;
     private ImageView registerLogo;
-    String name, age, email, password;
+    private RadioButton rbMale, rbFemale, rbOther;
+    private RadioGroup radioGroup;
+    String name, age, email, password, gender;
 
 
     @Override
@@ -52,8 +56,8 @@ public class RegistrationActivity extends AppCompatActivity {
                 if (validate()){
                     //upload data to database
 
-                    String user_email = userEmail.getText().toString().trim();
-                    String user_password = userPassword.getText().toString().trim();
+                    String user_email = userEmail.getEditText().getText().toString().trim();
+                    String user_password = userPassword.getEditText().getText().toString().trim();
 
                     firebaseAuth.createUserWithEmailAndPassword(user_email, user_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
@@ -83,17 +87,17 @@ public class RegistrationActivity extends AppCompatActivity {
 
 
     private void setupUIViews(){
-        userName = (EditText)findViewById(R.id.etUserName);
-        userPassword = (EditText)findViewById(R.id.etUserPassword);
-        userEmail = (EditText)findViewById(R.id.etUserEmail);
-        userAge = (EditText)findViewById(R.id.etAge);
+        userName = (TextInputLayout) findViewById(R.id.etUserName);
+        userPassword = (TextInputLayout)findViewById(R.id.etUserPassword);
+        userEmail = (TextInputLayout)findViewById(R.id.etUserEmail);
+        userAge = (TextInputLayout)findViewById(R.id.etAge);
         regButton = (Button)findViewById(R.id.btnRegister);
         userLogin = (TextView)findViewById(R.id.tvUserLogin);
         registerLogo = (ImageView)findViewById(R.id.regLogo);
-        tvRegName = (TextView)findViewById(R.id.tv_reg_name);
-        tvRegPassword = (TextView)findViewById(R.id.tv_reg_password);
-        tvRegEmail = (TextView)findViewById(R.id.tv_reg_email);
-        tvRegAge = (TextView)findViewById(R.id.tv_reg_age);
+        radioGroup = (RadioGroup)findViewById(R.id.radioGroup);
+        rbMale = (RadioButton)findViewById(R.id.btn_male);
+        rbFemale = (RadioButton)findViewById(R.id.btn_female);
+        rbOther = (RadioButton)findViewById(R.id.btn_other);
 
     }
 
@@ -104,17 +108,30 @@ public class RegistrationActivity extends AppCompatActivity {
     private Boolean validate(){
          Boolean result = false;
 
-        name = userName.getText().toString();
-        password = userPassword.getText().toString();
-        email = userEmail.getText().toString();
-        age = userAge.getText().toString();
+        name = userName.getEditText().getText().toString();
+        password = userPassword.getEditText().getText().toString();
+        email = userEmail.getEditText().getText().toString();
+        age = userAge.getEditText().getText().toString();
+        int checkedId = radioGroup.getCheckedRadioButtonId();
 
 
-        if(name.isEmpty() || password.isEmpty() || email.isEmpty() || age.isEmpty()){
-
-            Toast.makeText(this,"Please enter all the details", Toast.LENGTH_SHORT).show();
+        if(name.isEmpty() || password.isEmpty() || email.isEmpty() || age.isEmpty() || checkedId == -1){
+            userName.setError("Field can't be empty");
+            userPassword.setError("Field can't be empty");
+            userEmail.setError("Field can't be empty");
+            userAge.setError("Field can't be empty");
+            Toast.makeText(this, "Please enter all the details", Toast.LENGTH_SHORT).show();
 
         }else{
+            userName.setError(null);
+            userName.setErrorEnabled(true);
+            userEmail.setError(null);
+            userEmail.setErrorEnabled(true);
+            userPassword.setError(null);
+            userPassword.setErrorEnabled(true);
+            userAge.setError(null);
+            userAge.setErrorEnabled(true);
+            findRadioButton(checkedId);
             result = true;
         }
         return result;
@@ -149,8 +166,25 @@ public class RegistrationActivity extends AppCompatActivity {
     private void sendUserData(){
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         DatabaseReference myRef = firebaseDatabase.getReference(firebaseAuth.getUid());
-        UserProfile userProfile = new UserProfile(name, age, email, password);
+        UserProfile userProfile = new UserProfile(name, age, email, password, gender);
         myRef.setValue(userProfile);
+    }
+
+    private void findRadioButton(int checkedId) {
+        switch (checkedId){
+            case R.id.btn_male:
+                //If the user pressed the male
+                gender = "Male";
+                break;
+            case R.id.btn_female:
+                //If the user pressed the female
+                gender = "Female";
+                break;
+            case R.id.btn_other:
+                //If the user pressed the other
+                gender = "Other";
+                break;
+        }
     }
 
 
